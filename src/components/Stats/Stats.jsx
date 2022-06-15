@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import s from './Stats.module.css';
 
 function Stats({ label, percentage }) {
   return (
-    <li className="item" style={{ backgroundColor: getRandomHexColor() }}>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li className={s.item} style={{ backgroundColor: getRandomHexColor() }}>
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage}%</span>
     </li>
   );
 }
